@@ -1,3 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'datamapper'
+gem 'dm-postgres-adapter'
+gem 'rspec'
+
+These gems make us not require
+
 As a time-pressed user
 So that I can quickly go to web sites I regularly visit
 I would like to see a list of links on the homepage
@@ -35,7 +43,8 @@ PostgreSQL: is an object-relational database (ORDBMS) – i.e. an RDBMS, with ad
 
 PSQL cheatsheet: http://blog.jasonmeridth.com/posts/postgresql-command-line-cheat-sheet/
 
-SQL cheatsheet:
+SQL cheatsheet (we only need to use for initial database creation, otherwise done)
+
 http://www.cheat-sheets.org/sites/sql.su/
 
 SELECT * FROM students; (view table)
@@ -46,3 +55,8 @@ VALUES ('Lori');                (insert value into table)
 DELETE FROM students WHERE name = 'Lori';    (delete value)
 
 UPDATE students SET name = 'Jordan' WHERE name = 'Alex';      (update value)
+
+CRUD: create, read, update, and delete[1] (as an acronym CRUD) are the four basic functions of persistent storage.. Create = INSERT
+READ = SELECT
+UPDATE = update
+DELETE = DELETE
